@@ -51,5 +51,5 @@ function addtodoToUI(newTodo) {
   // Todo List'e List Item'ı Ekleme
 
   todoList.appendChild(listItem);
-  todoInput.value = ""; // Yazılan eklendikten sonra boş bırakmak için
+  todoInput.value = ""; // Yazılan eklendikten sonra boş bırakmak için kullanılır.
 }
