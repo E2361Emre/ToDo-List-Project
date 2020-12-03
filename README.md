@@ -1,2 +1,2 @@
 # ToDo-List-Project
-Modern tekniklerle Web Geliştirme ( Web Development ) Eğitimi Proje#1
+Modern Tekniklerle Web Geliştirme ( Web Development ) Eğitimi Proje#1
