@@ -16,9 +16,32 @@ function eventListeners() {
 function addTodo(e) {
   const newTodo = todoInput.value.trim();
 
-  addtodoToUI(newTodo);
+  if (newTodo === "") {
+    /*<div class="alert alert-danger" role="alert">
+                        This is a danger alert—check it out!
+                      </div>*/
+    showAlert("danger", "Lütfen bir todo girin...");
+  } else {
+    addtodoToUI(newTodo);
+    showAlert("success", "Todo başarıyla eklendi...");
+  }
 
   e.preventDefault();
+}
+function showAlert(type, message) {
+  const alert = document.createElement("div");
+
+  alert.className = `alert alert-${type}`;
+
+  alert.textContent = message;
+
+  firstCardBody.appendChild(alert);
+
+  //setTimeout
+
+  setTimeout(function () {
+    alert.remove();
+  }, 1000);
 }
 function addtodoToUI(newTodo) {
   // String değeri list item olarak UI'ya ekleyecek.
